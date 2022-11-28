@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.header{
+    min-height: 90vh;
+    padding: 50px;
+    background-color: #f1f2f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headNav{
+    padding: 15px 0 0 25px;
+    position: relative;
+    width: 100%;
+    background-color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headNav ul{
+    display: flex;
+    justify-items: center;
+    border-bottom: 4px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #0000FF,#FF00FF);
+}
+
+.headNav ul li{
+    padding: 0 15px 10px 15px;
+    list-style: none;
+    font-size: 1em;
+}
+
+.headNav ul li a{
+    color: #000;
+    text-decoration: 0;
+    transition: 0.3s;
+}
+
+.headNav ul li a:hover{
+    color: #7600FF;
+}
+
+.header .headings h1{
+    color: #7600FF;
+    background-image:linear-gradient(90deg,#0000FF,#FF00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5.5em;
+}
+
+.header .headings h3{
+    color: #000;
+    font-size: 2em;
+}
+
+.down{
+    position: relative;
+    top:-50px;
+    margin-bottom: -50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.down p a{
+    color: #000;
+    text-decoration: none;
+}
+
+section{
+    padding: 50px 30px 50px 30px;
+    max-width: 1400px;
+    margin: 0 auto 0 auto;
+}
+
+section h1:first-of-type{
+    text-align: center;
+    font-size: 2em;
+    padding: 0 15px 0 15px;
+    border-bottom: 4px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #0000FF,#FF00FF);
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .header{
+        padding: 25px;
+    }
+
+    .header .headings h1{
+        font-size: 3em;
+    }
+    
+    .header .headings h3{
+        font-size: 1em;
+    }
+
+    section{
+        padding: 40px 20px 40px 20px;
+    }
+
+}
