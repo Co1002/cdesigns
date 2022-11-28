@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDesigns</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script defer src="../assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <nav class="headNav">
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div class="header">
-        <div class="headings">
+        <div class="headings" data-aos="zoom-in">
             <h1>CDesigns</h1>
             <h3>Web Development & Design</h3>
         </div>
@@ -29,6 +31,18 @@
 
     <section class="about" id="about">
         <h1>About</h1>
+        <div class="card" data-aos="zoom-in">
+            <h3 class="slogan">„Make your dreams come true“</h3>
+            <p>Hey and welcome at CDesigns! With an experience since 2020, I am designing graphics and programming websites. <br>Everything I create is 100% handmade and not a template. I promise you, I will also try to achieve the best possible result for you. Just <a href="#contact" class="link">contact</a> me.</p>
+        </div>
     </section>
+
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            once: true, 
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
 </body>
 </html>
